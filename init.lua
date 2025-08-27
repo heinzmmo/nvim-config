@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Set up plugins
 require('lazy').setup {
   require 'plugins.colorscheme',
+  require 'plugins.tree-icons',
   require 'plugins.neo-tree',
   require 'plugins.treesitter',
   require 'plugins.bufferline',
@@ -31,4 +32,3 @@ require('lazy').setup {
 }
 
 -- Local plugins
-require('plugins.floating-terminal')

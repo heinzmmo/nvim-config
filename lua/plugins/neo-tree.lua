@@ -3,7 +3,7 @@ return {
 	branch = "v3.x",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		"nvim-tree/nvim-web-devicons",
+		--"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
 		"3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		{
@@ -62,12 +62,10 @@ return {
 					expander_highlight = "NeoTreeExpander",
 				},
 				icon = {
-					folder_closed = "",
-					folder_open = "",
+					folder_closed = "󰉋",
+					folder_open = "󰝰",
 					folder_empty = "󰜌",
-					-- The next two settings are only a fallback, if you use nvim-web-devicons and configure default icons there
-					-- then these will never be used.
-					default = "*",
+					default = "󰈚",
 					highlight = "NeoTreeFileIcon",
 				},
 				modified = {
