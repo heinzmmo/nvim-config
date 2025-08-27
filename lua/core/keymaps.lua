@@ -11,6 +11,11 @@ vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 -- For conciseness
 local opts = { noremap = true, silent = true }
 
+-- Parentheses (Caps is set to Ctrl)
+vim.keymap.set("i", "<C-f>", "()<Left>", opts)
+vim.keymap.set("i", "<C-j>", "{}<Left>", opts)
+vim.keymap.set("i", "<C-k>", "[]<Left>", opts)
+
 -- save file without auto-formatting
 vim.keymap.set("n", "<leader>sn", "<cmd>noautocmd w <CR>", opts)
 
