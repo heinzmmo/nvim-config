@@ -1,15 +1,31 @@
 return {
+  {
+  "scottmckendry/cyberdream.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require('cyberdream').setup({
+      transparent = true,
+    })
+  end,
+  },
+
+  {
   "folke/tokyonight.nvim",
   lazy = false,
   priority = 1000,
   config = function()
     require("tokyonight").setup({
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-    })
-    vim.cmd([[colorscheme tokyonight]])  -- <-- Aktiviert das Colorscheme
+       transparent = true,
+       styles = {
+         sidebars = "transparent",
+         floats = "transparent",
+       },
+     })
+  vim.cmd([[colorscheme tokyonight]]) -- <-- default active colorscheme 
   end,
+  },
 }
+
+
+
